@@ -1,0 +1,78 @@
+    :root{
+    --violet    :hsl(257, 40%, 49%);
+    --magenta   :hsl(300, 69%, 71%);
+    --open-sans :'Open Sans', sans-serif;
+    --poppins   :'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+.container{
+    background:var(--violet) url(./images/bg-desktop.svg) no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    display: flex;
+    padding: 40px 65px;
+}
+.header .logo{
+    width: 200px;
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 65px;
+}
+.body-img{
+    flex: 1;
+}
+.body-img img{
+    width: 90%;
+}
+.body-content{
+    flex: 1;
+    max-width: 40%;
+    align-self: start;
+    padding: 30px 0;
+    color: white;
+}
+.body-content h1{
+    max-width: 60%;
+}
+.body-content p{
+    font-weight: 400;
+    max-width: 75%;
+    line-height: 2;
+}
+.body-content button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 17px 70px;
+    color: var(--violet);
+    font-family: var(--open-sans);
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+}
+.socials{
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    padding: 0 65px;
+}
+.social{
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
