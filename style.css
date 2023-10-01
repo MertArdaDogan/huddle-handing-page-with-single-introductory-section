@@ -84,9 +84,6 @@ body{
     border: 2px solid var(--magenta);
 }
 @media (max-width: 1440px) {
-    .body-content{
-        max-width: initial;
-    }
     .body-content h1{
         max-width: initial;
     }
