@@ -16,7 +16,6 @@ body{
     position: relative;
 }
 .header{
-    display: flex;
     padding: 40px 65px;
 }
 .header .logo{
@@ -61,10 +60,14 @@ body{
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
 }
+.body-content button:hover{
+    background-color: var(--magenta);
+    color: white;
+}
 .socials{
     display: flex;
     position: absolute;
-    right: 0;
+    right: 50px;
     bottom: 10px;
     padding: 0 65px;
 }
@@ -75,4 +78,62 @@ body{
     padding: 5px;
     color: white;
     cursor: pointer;
+}
+.social:hover{
+    color: var(--magenta);
+    border: 2px solid var(--magenta);
+}
+@media (max-width: 1440px) {
+    .body-content{
+        max-width: initial;
+    }
+    .body-content h1{
+        max-width: initial;
+    }
+    .body-content p{
+        max-width: initial;
+    }
+}
+@media (max-width: 637px) {
+    .body{
+        flex-direction: column;
+    }
+    .container{
+        background:var(--violet) url(./images/bg-mobile.svg) no-repeat;
+        height: 100vh;
+        position: relative;
+    }
+    .header .logo{
+        width: 150px;
+    }
+    .body-img img{
+        flex: initial;
+        width: 100%;
+    }
+    .body-content{
+        max-width: initial;
+        text-align: center;
+    }
+    .body-content h1{
+        max-width: initial;
+        font-size: 22px;
+    }
+    .body-content p{
+        max-width: initial;
+        font-size: 14px;
+    }
+    .body-content button{
+        font-size: 14px;
+        padding: 12px 70px;
+    }
+    .socials{
+        position: absolute;
+        left: 50%;
+        bottom: initial;
+        right: initial;
+        transform: translate(-50%, -50%);
+    }
+    footer{
+        margin-top: 40px;
+    }
 }
